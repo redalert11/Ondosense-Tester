@@ -1,3 +1,32 @@
+## How to Run
+
+### 1) Clone & (optionally) create a virtual env
+
+```bash
+git clone https://github.com/redalert11/Ondosense-Tester.git
+cd Ondosense-Tester
+
+# Optional: create a venv
+python -m venv .venv
+# Windows
+.\.venv\Scripts\activate
+```
+
+### 2) Install dependencies
+
+```bash
+python -m pip install -U pip
+pip install PyQt6 pyqtgraph pyserial
+```
+
+### 3) Run the GUI
+
+```bash
+python app.py
+```
+
+---
+
 # OndoSense RS‑485 Quick Reference & Recommended Settings
 
 **Applies to**: OndoSense sensors speaking the “OS1 Application Note” RS‑485 protocol (March 2024).  
