@@ -1,0 +1,8 @@
+# ---- Python basics ----
+__pycache__/
+*.py[cod]
+*$py.class
+__init__.py
+
+# Virtual envs
+.venv/

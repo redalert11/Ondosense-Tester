@@ -1,0 +1,69 @@
+
+# ondosense/protocol.py
+CMD_READ_PARAM       = 0x01
+CMD_WRITE_PARAM      = 0x02
+CMD_MEASUREMENT      = 0x03
+CMD_AUTOS_AMP        = 0x07
+CMD_BG_CAL           = 0x0D
+CMD_BG_REMOVE        = 0x0E
+CMD_SAVE_PARAMS      = 0x0F
+CMD_RESTART_HP       = 0x19
+CMD_FACTORY_RESET    = 0xFF
+
+CMD_READ_MIN         = 0x10
+CMD_READ_MAX         = 0x11
+
+# Parameters
+PARAM_SELECTOR       = 0x41
+PARAM_MEAS_RATE      = 0x43
+PARAM_MIN_DIST       = 0x44
+PARAM_MAX_DIST       = 0x45
+PARAM_INT_RAW        = 0x46
+PARAM_INT_SPEC       = 0x47
+PARAM_PROFILE        = 0x48
+PARAM_BAUD           = 0x49
+PARAM_HP_THRESH      = 0x83
+PARAM_HP_TIMEOUT     = 0x84
+PARAM_PREAMP_Q       = 0x70
+PARAM_PREAMP_I       = 0x71
+PARAM_ADCG_Q         = 0x72
+PARAM_ADCG_I         = 0x73
+PARAM_RX_DELAY       = 0x90
+PARAM_THRESH_SENS    = 0x91
+PARAM_THRESH_OFFSET  = 0x82
+PARAM_DIST_OFFSET    = 0xED
+PARAM_EMA_MS         = 0x96
+PARAM_OUTLIER_TMAX   = 0x97
+PARAM_OUTLIER_DMAX   = 0x98
+PARAM_OUTLIER_VMAX   = 0x99
+PARAM_PEAK_SORT      = 0x92
+PARAM_PEAK_INDEX     = 0x93
+PARAM_SN             = 0xF0
+
+PARAM_SW1_EN         = 0xC0
+PARAM_SW2_EN         = 0xC1
+PARAM_SW3_EN         = 0xC2
+PARAM_SW1_POL        = 0xD0
+PARAM_SW2_POL        = 0xD1
+PARAM_SW3_POL        = 0xD2
+PARAM_IO1_SEL1       = 0xDF
+PARAM_IO1_SEL2       = 0xE0
+PARAM_IO1_SEL3       = 0xE1
+PARAM_CL_MIN         = 0xB0
+PARAM_CL_MAX         = 0xB1
+PARAM_CL_ERRMODE     = 0xB2
+
+# Status
+STATUS_SUCCESS       = 0x01
+STATUS_SUCCESS_WEAK  = 0x02
+
+# Selector bits
+SEL_IQ            = 1
+SEL_SPECTRUM      = 2
+SEL_PEAK_LIST     = 4
+SEL_PEAK          = 8
+SEL_DISTANCE      = 16
+SEL_DISTANCE_LIST = 64
+SEL_MEAS_COUNT    = 128
+SEL_TEMPERATURE   = 256
+SEL_HIGH_PREC     = 512
